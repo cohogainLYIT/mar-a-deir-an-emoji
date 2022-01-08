@@ -35,6 +35,7 @@ body{
 .seanfhocal-area .seanfhocal{
     font-size: 22px;
     text-align: center;
+    word-break: keep-all;
 } 
 .seanfhocal-area i{
     font-size: 15px;
