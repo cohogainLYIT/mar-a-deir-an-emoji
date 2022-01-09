@@ -906,7 +906,6 @@ var _gui =`
     <div onclick="display('abair_ui_controls');" id="abair_logo">
       <img src="https://www.abair.ie/webreader/img/logo_m.png" style="width: 50px;" alt="abair synthesizer">
       <br />
-      <span style="margin-top: 0px; margin-bottom: 0px; font-size: 0px; font-weight: normal;">Sintéiseoir</span>
     </div><!-- logo -->
     
     <div id="abair_ui_controls">
