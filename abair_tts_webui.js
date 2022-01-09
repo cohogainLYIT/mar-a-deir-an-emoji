@@ -398,7 +398,7 @@ function display(id)
         )
     {
       container.style.width = '85px';
-      rollOut(container, 700, 15, showControls);
+      rollOut(container, 250, 15, showControls);
     }
     else
     {
@@ -422,7 +422,7 @@ function showControls()
   ctrls.style.visibility = 'visible';
   ctrls.style.display = 'block';
   var clbt = document.getElementById('abair_bt_close');
-  clbt.style.visibility = 'visible';
+  clbt.style.visibility = 'visable';
   clbt.style.display = 'block';
 }
 
@@ -904,9 +904,9 @@ var _gui =`
       <img src="https://www.abair.ie/webreader/img/close_arrow.png" style="width: 20px; height: 72px; margin: 0 auto;"/>
     </div>
     <div onclick="display('abair_ui_controls');" id="abair_logo">
-      <img src="https://www.abair.ie/webreader/img/logo_m.png" style="width: 65px;" alt="abair synthesizer">
+      <img src="https://www.abair.ie/webreader/img/logo_m.png" style="width: 50px;" alt="abair synthesizer">
       <br />
-      <span style="margin-top: 0px; margin-bottom: 4px; font-size: 14px; font-weight: normal;">Sintéiseoir</span>
+      <span style="margin-top: 0px; margin-bottom: 0px; font-size: 0px; font-weight: normal;">Sintéiseoir</span>
     </div><!-- logo -->
     
     <div id="abair_ui_controls">
@@ -923,22 +923,6 @@ var _gui =`
           <option selected="" value="ga_CM">Conamara</option>
           <option value="ga_MU">Corca Dhuibhne</option>
          </select>
-        </li>
-        <li>
-          <label for="speed">Luas:</label>
-          <select id="speed" onchange="uiChangedState(this);">
-            <option selected="true" value="1.0">gnáthluas</option>
-            <option value="1.3">go tapa</option>
-            <option value="0.8">go mall</option>
-          </select>
-        </li>
-        <li>
-          <label for="theme">Leagan amach:</label>
-          <select id="theme" onchange="uiChangedState(this);">
-            <option selected="true" value="no_theme">fuaim amháin</option>
-            <option value="zoom">zúm</option>
-            <option value="overlay">ar bharr</option>
-          </select>
         </li>
       </ul>
     </div> <!-- controls -->
