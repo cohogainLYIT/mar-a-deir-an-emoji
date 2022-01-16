@@ -49,10 +49,18 @@ body{
     margin: 0 0 3px 10px;
 }
 
-.wrapper .buttons{
+.wrapper .emojis{
     border-top: 1px solid #ccc;
 }
-.buttons .features{
+
+.wrapper .arrows{
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+}
+.emojis .features{
     display: flex;
     align-items: center;
     margin-top: 20px;
@@ -73,15 +81,16 @@ body{
     transition: all 0.3s ease;
 }
 .features table p{
+    font-size:33px;
+    list-style: none;
+    margin: 6px 10px 10px 10px;
     height: 47px;
     width: 47px;
-    list-style: none;
-    padding:10px 16px;
     justify-content: center;
     align-items: center;
     display: flex;
     cursor: pointer;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 .features table i:hover{
     height: 49px;
