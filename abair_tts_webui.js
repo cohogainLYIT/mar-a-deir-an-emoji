@@ -68,8 +68,6 @@ function loadAbairSpeechSynthesizer()
   uiContainer.innerHTML = _gui;
   document.body.appendChild(uiContainer);
   
-  document.getElementById('speed').selectedIndex = 0;
-  document.getElementById('theme').selectedIndex = 0;
   
   // Experimental feature
 //  addEventToElement(document,
@@ -394,12 +392,10 @@ function display(id)
   {
     var container = document.getElementById('abair_ui_container');
     var clbt = document.getElementById('abair_bt_close');
-    if (el.style.visibility === 'hidden' ||
-        el.style.visibility === ''
-        )
+    if (el.style.visibility === 'hidden' || el.style.visibility === '')
     {
       container.style.width = '85px';
-      rollOut(container, 250, 15, showControls);
+      rollOut(container, 230, 20, showControls);
     }
     else
     {
@@ -423,7 +419,7 @@ function showControls()
   ctrls.style.visibility = 'visible';
   ctrls.style.display = 'block';
   var clbt = document.getElementById('abair_bt_close');
-  clbt.style.visibility = 'visable';
+  clbt.style.visibility = 'hidden';
   clbt.style.display = 'block';
 }
 
@@ -499,7 +495,7 @@ function clearUI()
 * @method handleSelection
 * @param {Event} ev    an event
 */
-function handleSelection(ev, text)
+function handleSelection(ev)
 {
   var el = getTarget(ev);
   
@@ -507,7 +503,7 @@ function handleSelection(ev, text)
     return;
   el.setAttribute('onmouseout', 'cancelRequest(this);');
   el.setAttribute('onfocusout', 'cancelRequest(this);');
-  console.log("Event type: " + ev.type);
+  //console.log("Event type: " + ev.type);
   var text = '';
   if (ev.type === 'mouseover' || ev.type === 'focusin')
   {
@@ -912,7 +908,7 @@ var _gui =`
     <div id="abair_ui_controls">
     
       <div id="abair_bt_activate">
-        <img id="abair_bt_activate_img" src="https://www.abair.ie/webreader/img/activate.png" onclick=toggle(this); title="Cuir i bhfeidhm" src="" alt="Cuir i bhfeidhm" style="width: 44px;"/>
+        <img id="abair_bt_activate_img" src="https://www.abair.ie/webreader/img/activate.png" onclick="toggle(this)"; title="Cuir i bhfeidhm" src="" alt="Cuir i bhfeidhm" style="width: 44px;"/>
       </div>
       
       <ul id="abair_ui_list">
