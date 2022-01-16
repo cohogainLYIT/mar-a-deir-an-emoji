@@ -135,6 +135,7 @@ function makeForm(text)
 */
 function sendRequest(req)
 {
+  console.log("sea")
   var frm = makeForm(req.text);
   _requestWorker.postMessage({'form':JSON.stringify(frm)});
 }
@@ -322,7 +323,7 @@ function removeOverlay(ev)
       window.removeEventListener('scroll', smoothScroll); // TODO: x-platform
       document.body.removeChild(el);
       ev.stopPropagation();
-      activateSelectionMode();
+      //activateSelectionMode();
     } else
     {
       ev.stopPropagation();
@@ -448,8 +449,8 @@ function uiChangedState(el)
 function activateSelectionMode()
 {
   document.body.setAttribute('onclick', 'handleSelection(event);');
-  document.body.setAttribute('onmouseover', 'handleSelection(event);');
-  document.body.setAttribute('onfocusin', 'handleSelection(event);');
+  //document.body.setAttribute('onmouseover', 'handleSelection(event);');
+  //document.body.setAttribute('onfocusin', 'handleSelection(event);');
   _isActive = true;
 }
 
@@ -460,8 +461,8 @@ function activateSelectionMode()
 function deactivateSelectionMode()
 {
   document.body.removeAttribute('onclick');
-  document.body.removeAttribute('onmouseover');
-  document.body.removeAttribute('onfocusin');
+  //document.body.removeAttribute('onmouseover');
+  //document.body.removeAttribute('onfocusin');
   _isActive = false;
 }
 
@@ -498,7 +499,7 @@ function clearUI()
 * @method handleSelection
 * @param {Event} ev    an event
 */
-function handleSelection(ev)
+function handleSelection(ev, text)
 {
   var el = getTarget(ev);
   
@@ -506,13 +507,13 @@ function handleSelection(ev)
     return;
   el.setAttribute('onmouseout', 'cancelRequest(this);');
   el.setAttribute('onfocusout', 'cancelRequest(this);');
-//  console.log("Event type: " + ev.type);
+  console.log("Event type: " + ev.type);
   var text = '';
   if (ev.type === 'mouseover' || ev.type === 'focusin')
   {
     if (isChildOf(el, document.getElementById('abair_ui_container')))
       return;
-    selectElementContents(el);
+    //selectElementContents(el);
     var hyper = checkHyperLink(el);
     if (hyper.isLink === true)
     {
@@ -760,7 +761,7 @@ function presskey(e)
       {
         unselectElements();
         document.body.removeChild(root);
-        activateSelectionMode();
+       //activateSelectionMode();
         unselectElements();
       }
     }
@@ -911,7 +912,7 @@ var _gui =`
     <div id="abair_ui_controls">
     
       <div id="abair_bt_activate">
-        <img id="abair_bt_activate_img" src="https://www.abair.ie/webreader/img/activate.png" onclick="activateSelectionMode();toggle(this);" title="Cuir i bhfeidhm" src="" alt="Cuir i bhfeidhm" style="width: 44px;"/>
+        <img id="abair_bt_activate_img" src="https://www.abair.ie/webreader/img/activate.png" onclick=toggle(this); title="Cuir i bhfeidhm" src="" alt="Cuir i bhfeidhm" style="width: 44px;"/>
       </div>
       
       <ul id="abair_ui_list">

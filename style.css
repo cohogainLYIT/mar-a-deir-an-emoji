@@ -22,8 +22,9 @@ body{
 .wrapper header{
     font-size: 30px;
     font-weight: 600;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     user-select:none; 
+    pointer-events: none;
     text-align: center;
 }
 .wrapper .content{
@@ -62,7 +63,7 @@ body{
 }
 .features table i{
     list-style: none;
-    margin: 10px 10px 10px 10px;
+    margin: 6px 10px 10px 10px;
     height: 47px;
     width: 47px;
     justify-content: center;
@@ -70,6 +71,17 @@ body{
     display: flex;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+.features table p{
+    height: 47px;
+    width: 47px;
+    list-style: none;
+    padding:10px 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.3s ease; 
 }
 .features table i:hover{
     height: 49px;

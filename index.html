@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+        <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <script type="text/javascript" src="abair_tts_webui.js"></script>
     </head>
@@ -14,16 +15,31 @@
         <div class="wrapper">
             <header unselectable="on"> Mar a deir an emoji </header>
             <div class="content">
-                <div class="seanfhocal-area">
-                    <i class="fas fa-quote-left"></i>
+                <div id="seanfhocal_area" class="seanfhocal-area">
+                    <i id="quote_left" class="fas fa-quote-left"></i>
                     <p id="seanfhocal_txt" class="seanfhocal">Is minic a bhris béal duine a shrón.</p>
-                    <i class="fas fa-quote-right"></i>     
+                    <i id="quote_right" class="fas fa-quote-right"></i>     
                 </div>      
             </div>
             <div class="buttons">
                 <div class="features">
                     <table>
-                        <tr><td><i onclick="showSeanfhocal(0)" id="BOX" class="em em-boxing_glove" aria-role="presentation" aria-label="BOXING_GLOVE"></i></td>
+                        <tr>
+                            <td><i onclick="showSeanfhocal(0)" id="BOX" class="em em-boxing_glove" aria-role="presentation" aria-label="BOXING_GLOVE"></i></td>
+                            <td><i onclick="showSeanfhocal(1)" id="IRE"class="em em-flag-ie" aria-role="presentation" aria-label="Ireland Flag"></i></td>
+                            <td><i onclick="showSeanfhocal(2)" ID="FOX" class="em em-fox_face" aria-role="presentation" aria-label="FOX FACE"></i></td>
+                            <td><i onclick="showSeanfhocal(3)" ID="PIG" class="em em-pig" aria-role="presentation" aria-label="PIG FACE"></i></td>
+                            <td><i onclick="showSeanfhocal(4)" ID="ROAD" class="em em-motorway" aria-role="presentation" aria-label=""></i></td>
+                        </tr>
+                        <tr>
+                            <td><i onclick="showSeanfhocal(0)" id="BOX" class="em em-boxing_glove" aria-role="presentation" aria-label="BOXING_GLOVE"></i></td>
+                            <td><i onclick="showSeanfhocal(1)" id="IRE"class="em em-flag-ie" aria-role="presentation" aria-label="Ireland Flag"></i></td>
+                            <td><i onclick="showSeanfhocal(2)" ID="FOX" class="em em-fox_face" aria-role="presentation" aria-label="FOX FACE"></i></td>
+                            <td><i onclick="showSeanfhocal(3)" ID="PIG" class="em em-pig" aria-role="presentation" aria-label="PIG FACE"></i></td>
+                            <td><i onclick="showSeanfhocal(4)" ID="ROAD" class="em em-motorway" aria-role="presentation" aria-label=""></i></td>
+                        </tr>
+                        <tr>
+                            <td><i onclick="showSeanfhocal(0)" id="BOX" class="em em-boxing_glove" aria-role="presentation" aria-label="BOXING_GLOVE"></i></td>
                             <td><i onclick="showSeanfhocal(1)" id="IRE"class="em em-flag-ie" aria-role="presentation" aria-label="Ireland Flag"></i></td>
                             <td><i onclick="showSeanfhocal(2)" ID="FOX" class="em em-fox_face" aria-role="presentation" aria-label="FOX FACE"></i></td>
                             <td><i onclick="showSeanfhocal(3)" ID="PIG" class="em em-pig" aria-role="presentation" aria-label="PIG FACE"></i></td>
@@ -34,12 +50,13 @@
                             <td><i onclick="showSeanfhocal(7)" id="IRE"  class="em em-runner" aria-role="presentation" aria-label="RUNNER"></i></td>
                             <td><i onclick="showSeanfhocal(8)" ID="FOX"  class="em em-sunrise_over_mountains" aria-role="presentation" aria-label="SUNRISE OVER MOUNTAINS"></i></td>
                             <td><i onclick="showSeanfhocal(9)" ID="FOX"  class="em em-dog" aria-role="presentation" aria-label="DOG FACE"></i></td>
-                        </tr>
+                        </tr>           
                     </table>
                 </div>
             </div>
 
          <script src="script.js"></script>  
+         <script src="abair_tts_webui.js"></script>  
 
     </body>
 </html>
