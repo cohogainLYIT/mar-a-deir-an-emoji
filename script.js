@@ -150,3 +150,82 @@ var keyboard_two =`
 </tr>       
 </table>
 `;
+
+/*
+                        <tr>
+                            <td><p onclick="showSeanfhocal(0)" id="BOX" >🥊</p></td>
+                            <td><p onclick="showSeanfhocal(1)" id="IRE"class="em em-flag-ie" aria-role="presentation" aria-label="Ireland Flag"></p></td>
+                            <td><p onclick="showSeanfhocal(2)" ID="FOX">🦊</p></td>
+                            <td><p onclick="showSeanfhocal(3)" ID="PIG" >🐖</p></td>
+                            <td><p onclick="showSeanfhocal(4)" ID="ROAD" class="em em-motorway" aria-role="presentation" aria-label=""></p></td>
+                        </tr>
+                        <tr>
+                            <td><i onclick="showSeanfhocal(5)" id="GHOST"  class="em em-ghost" aria-role="presentation" aria-label="GHOST"></i></td>
+                            <td><i onclick="showSeanfhocal(6)" id="BEETLE"  class="em em-beetle" aria-role="presentation" aria-label="LADY BEETLE"></i></td>
+                            <td><i onclick="showSeanfhocal(7)" id="IRE"  class="em em-runner" aria-role="presentation" aria-label="RUNNER"></i></td>
+                            <td><i onclick="showSeanfhocal(8)" ID="FOX"  class="em em-sunrise_over_mountains" aria-role="presentation" aria-label="SUNRISE OVER MOUNTAINS"></i></td>
+                            <td><i onclick="showSeanfhocal(9)" ID="FOX"  class="em em-dog" aria-role="presentation" aria-label="DOG FACE"></i></td>
+                        </tr>  
+
+
+
+    if (x == 0){
+        seanfhocalText.innerText = "Is minic a bhris béal duine a shrón."
+        if (document.getElementById('abair_bt_activate_img').getAttribute('alt') == abair_bt_activate_text_alt){
+            sendRequest({"text":seanfhocalText.innerText});
+        }
+    }else if (x == 1){
+        seanfhocalText.innerText = "Tír gan teanga, tír gan anam."
+        if (document.getElementById('abair_bt_activate_img').getAttribute('alt') == abair_bt_activate_text_alt){
+            sendRequest({"text":seanfhocalText.innerText});
+            change_keyboard(2);
+        }
+    }else if (x == 2){
+        seanfhocalText.innerText = "Ní mhealltar an sionnach faoi dhó."
+        if (document.getElementById('abair_bt_activate_img').getAttribute('alt') == abair_bt_activate_text_alt){
+            sendRequest({"text":seanfhocalText.innerText});
+        }
+    }
+    else if (x == 3){
+        seanfhocalText.innerText = "Is iad na muca ciúine a itheann an mhin."
+        if (document.getElementById('abair_bt_activate_img').getAttribute('alt') == abair_bt_activate_text_alt){
+            sendRequest({"text":seanfhocalText.innerText});
+        }
+    }
+    else if (x == 4){
+        seanfhocalText.innerText = "Is fada an bóthar nach bhfuil casadh ann."
+        if (document.getElementById('abair_bt_activate_img').getAttribute('alt') == abair_bt_activate_text_alt){
+            sendRequest({"text":seanfhocalText.innerText});
+        }
+    }
+    else if (x == 5){
+        seanfhocalText.innerText = "An rud a scríobhann an púca, léann sé féin é."
+        if (document.getElementById('abair_bt_activate_img').getAttribute('alt') == abair_bt_activate_text_alt){
+            sendRequest({"text":seanfhocalText.innerText});
+        }
+    }
+    else if (x == 6){
+        seanfhocalText.innerText = "Aithníonn ciaróg ciaróg eile."
+        if (document.getElementById('abair_bt_activate_img').getAttribute('alt') == abair_bt_activate_text_alt){
+            sendRequest({"text":seanfhocalText.innerText});
+        }
+    }
+    else if (x == 7){
+        seanfhocalText.innerText = "Is fearr rith maith ná drochsheasamh."
+        if (document.getElementById('abair_bt_activate_img').getAttribute('alt') == abair_bt_activate_text_alt){
+            sendRequest({"text":seanfhocalText.innerText});
+        }
+    }
+    else if (x == 8){
+        seanfhocalText.innerText = "Is glas iad na cnoic i bhfad uainn."
+        if (document.getElementById('abair_bt_activate_img').getAttribute('alt') == abair_bt_activate_text_alt){
+            sendRequest({"text":seanfhocalText.innerText});
+        }
+    }
+    else if (x == 9){
+        seanfhocalText.innerText = "Is minic a bhí cú mhall sona."
+        if (document.getElementById('abair_bt_activate_img').getAttribute('alt') == abair_bt_activate_text_alt){
+            sendRequest({"text":seanfhocalText.innerText});
+        }
+    }
+*/
